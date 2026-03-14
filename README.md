@@ -28,3 +28,13 @@ pip install opencv-python
 - Python
 - OpenCV
 - NumPy
+
+## Screenshots
+
+![](screenshot_img/img1.png)
+
+![](screenshot_img/img2.png)
+
+![](screenshot_img/img3.png)
+
+![](screenshot_img/img4.png)
