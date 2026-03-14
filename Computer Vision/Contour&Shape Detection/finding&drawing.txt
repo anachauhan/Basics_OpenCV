@@ -1,0 +1,37 @@
+Contour -->
+curve or edges that joins an image in a continuous manner
+
+cv2.findContours()   --> on binary image --> black&white image
+# contour , hierarcy = cv2.findContours(img , mode , method)
+# contour -> list of all points detected in a shape
+# hierarchy -> contour level relation (parent to child)
+# img --- binary only
+# mode --> Retrieval mode  -> how many contours , what kind of contours to be returned 
+                -> RETR_TREE   => only outermost shapes
+                , RETR_EXTERIOR  => all shapes with hierarchy
+                , RETR_LIST  => all shapes without hierarchy
+# method --> return how many detail of each contour to be returned
+
+#draw contour --
+cv2.drawContours()
+cv2.drawContours(image , contours , contour_index , color , thickness)
+# contour_index ==> -1 --> all shape    0-> first shape      1-> second shape
+
+
+"""
+# detection of shape from number of sides - approxPolyDB()
+# approx = cv2.approxPolyDP(contour , epsilon , True)
+epsilon -->  epsilon = 0.01 * cv2.arclength(contour , True)    ---> smaller = more precise , more points
+                                                              --->  large = rough , few points
+
+# epison decides how much the simplified shape is close to real one
+# arclength must be used
+# if good results are not obtained , change the arc length or epsilon values
+
+small --> arclength = 200px  epsilon = 0.01 * x
+large sq--> arclength = 800 px  epsilon = 8.0 
+big circle --> arclength = 1200 px  epsilon = 12 px
+"""
+
+
+

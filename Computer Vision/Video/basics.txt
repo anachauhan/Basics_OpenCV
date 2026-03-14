@@ -1,0 +1,24 @@
+Video is a collection of no. of images which are shown with a speed such that they appears to be a single unit.
+
+I1 -> I2 -> I3 -> .... 
+
+Generally each video second is made up of 30-60 images  => frames  --> I1 , I2 , ...
+
+
+Webcam -> live video capture 
+
+Frame -> image which is a part of a video or Webcam
+
+Frame = 1 image
+Video = many frames
+
+
+frame-by-frame processing --> (suppose in a video of 1 min , a person is running , so we want to capture/
+detect that person throughout) -->  F1 = detect person ->draw box
+                                    F2 = detect -> draw box
+
+#frame-by-frame processing
+#1 . draw
+#2.Detect -> faces , eyes , cars ,etc
+#3.Analyze -> specific time finding , etc
+                      
